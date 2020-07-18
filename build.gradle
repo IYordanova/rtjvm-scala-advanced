@@ -1,0 +1,19 @@
+
+plugins {
+    id 'scala'
+    id 'java-library'
+}
+
+repositories {
+    jcenter()
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.scala-lang:scala-library:2.13.0-M2'
+    implementation 'org.scala-lang.modules:scala-parallel-collections_2.13.0-M2:1.0.2'
+}
+
+test {
+    enabled = false
+}
